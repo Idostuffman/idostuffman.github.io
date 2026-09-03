@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450" role="img" aria-label="[ARTWORK 1]">
+  <rect width="600" height="450" fill="#ffe3ef"/>
+  <circle cx="300" cy="200" r="120" fill="#ff6fa8" stroke="#2b2118" stroke-width="6"/><circle cx="260" cy="180" r="14" fill="#2b2118"/><circle cx="340" cy="180" r="14" fill="#2b2118"/><path d="M250 240 Q300 280 350 240" stroke="#2b2118" stroke-width="6" fill="none"/>
+  <text x="300" y="400" text-anchor="middle" font-family="monospace" font-size="22" fill="#2b2118">[ARTWORK 1]</text>
+</svg>

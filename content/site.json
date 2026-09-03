@@ -1,0 +1,2784 @@
+{
+  "version": 1,
+  "identity": {
+    "name": "Chei",
+    "username": "@chei",
+    "pronouns": "",
+    "siteTitle": "chei's website",
+    "tagline": "[SHORT DESCRIPTION — e.g. artist, doodler, small creature]",
+    "welcome": "hi :3\nwelcome to my website",
+    "avatar": "/placeholders/avatar.svg",
+    "deepTitle": "chei's website?"
+  },
+  "socials": [
+    {
+      "id": "s1",
+      "label": "[social 1]",
+      "url": "https://example.com",
+      "icon": "✦"
+    },
+    {
+      "id": "s2",
+      "label": "[social 2]",
+      "url": "https://example.com",
+      "icon": "✧"
+    },
+    {
+      "id": "s3",
+      "label": "[shop / store]",
+      "url": "https://example.com",
+      "icon": "★"
+    }
+  ],
+  "bio": {
+    "short": "[CHEI BIO GOES HERE]\n\nthis is the short version. the long version is a staircase.",
+    "layers": [
+      {
+        "id": "who",
+        "title": "Who am I?",
+        "body": "[LONG BIO GOES HERE]\n\nthis is where Chei explains who Chei is. or doesn't. it's editable.",
+        "kind": "who",
+        "prompt": "you wanna know more?",
+        "children": [
+          {
+            "id": "personality",
+            "title": "Personality",
+            "body": "[PERSONALITY DESCRIPTION]\n\n(there is a whole separate room for this. the door is below.)",
+            "kind": "personality",
+            "prompt": "more?",
+            "children": [
+              {
+                "id": "likes",
+                "title": "Likes",
+                "body": "things that make the day slightly better:",
+                "kind": "likes",
+                "prompt": "and what don't you like",
+                "children": [
+                  {
+                    "id": "dislikes",
+                    "title": "Dislikes",
+                    "body": "things that make the day slightly worse:",
+                    "kind": "dislikes",
+                    "prompt": "keep going",
+                    "children": [
+                      {
+                        "id": "interests",
+                        "title": "Interests",
+                        "body": "current obsessions, ranked by how loudly Chei talks about them.",
+                        "kind": "interests",
+                        "prompt": "more",
+                        "children": [
+                          {
+                            "id": "habits",
+                            "title": "Habits",
+                            "body": "[HABITS GO HERE]\n\n- draws instead of sleeping\n- refreshes the same page eleven times\n- [habit]\n- [habit]",
+                            "kind": "habits",
+                            "prompt": "more...",
+                            "depthGain": 1,
+                            "children": [
+                              {
+                                "id": "facts",
+                                "title": "Random facts",
+                                "body": "facts. some are true.",
+                                "kind": "facts",
+                                "prompt": "more...",
+                                "children": [
+                                  {
+                                    "id": "thoughts",
+                                    "title": "Thoughts",
+                                    "body": "unfiltered. sorry.",
+                                    "kind": "thoughts",
+                                    "prompt": "more...",
+                                    "depthGain": 1,
+                                    "children": [
+                                      {
+                                        "id": "more1",
+                                        "title": "More...",
+                                        "body": "[MORE ABOUT CHEI]\n\nthere isn't much more. you can stop here. most people stop here.",
+                                        "prompt": "more...",
+                                        "children": [
+                                          {
+                                            "id": "more2",
+                                            "title": "More...",
+                                            "body": "[EVEN MORE]\n\nok you're still here. that's fine. the page is getting a little tired though.",
+                                            "prompt": "more...",
+                                            "depthGain": 1,
+                                            "children": [
+                                              {
+                                                "id": "why",
+                                                "title": "Why are you still clicking?",
+                                                "body": "no, really.\n\nwhat are you looking for?\n\n[there is a door under this paragraph. it is not a metaphor.]",
+                                                "prompt": "...",
+                                                "minDepth": 3,
+                                                "depthGain": 1,
+                                                "children": [
+                                                  {
+                                                    "id": "under",
+                                                    "title": "under",
+                                                    "body": "you found the bottom of the about page.\n\nit is not the bottom of the website.\n\n[there is a door here.](/door) it wants something you don't have yet.",
+                                                    "depthGain": 1
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "personality": {
+    "intro": "[PERSONALITY DESCRIPTION]\n\nthis room describes Chei in layers. the first layer is what people see. keep peeling.",
+    "traits": [
+      {
+        "id": "t1",
+        "trait": "[trait, e.g. curious]",
+        "description": "[description]",
+        "intensity": 4,
+        "hidden": false
+      },
+      {
+        "id": "t2",
+        "trait": "[trait, e.g. quiet]",
+        "description": "[description]",
+        "intensity": 3,
+        "hidden": false
+      },
+      {
+        "id": "t3",
+        "trait": "[trait, e.g. chaotic]",
+        "description": "[description]",
+        "intensity": 5,
+        "hidden": false
+      },
+      {
+        "id": "t4",
+        "trait": "[trait, e.g. soft]",
+        "description": "[description]",
+        "intensity": 2,
+        "hidden": false
+      },
+      {
+        "id": "t5",
+        "trait": "[hidden trait]",
+        "description": "[a trait that only shows up when someone has looked long enough]",
+        "intensity": 4,
+        "hidden": true
+      },
+      {
+        "id": "t6",
+        "trait": "[hidden trait]",
+        "description": "[something Chei doesn't usually tell people]",
+        "intensity": 5,
+        "hidden": true
+      }
+    ],
+    "layers": [
+      {
+        "id": "p1",
+        "title": "How Chei appears to other people",
+        "body": "[HOW CHEI APPEARS TO OTHERS]\n\nprobably: friendly, a little odd, draws a lot."
+      },
+      {
+        "id": "p2",
+        "title": "How Chei thinks they appear",
+        "body": "[HOW CHEI THINKS THEY APPEAR]\n\nprobably: louder than they actually are."
+      },
+      {
+        "id": "p3",
+        "title": "How Chei actually behaves",
+        "body": "[HOW CHEI ACTUALLY BEHAVES]\n\nthis part is honest. it can be edited later, if it gets too honest."
+      },
+      {
+        "id": "p4",
+        "title": "Things Chei doesn't usually tell people",
+        "body": "[THINGS CHEI DOESN'T USUALLY TELL PEOPLE]\n\nyou got this far. that's kind of on you."
+      },
+      {
+        "id": "p5",
+        "title": "Things Chei doesn't tell themself",
+        "body": "[...]\n\nthis layer is mostly blank. that is also information."
+      },
+      {
+        "id": "p6",
+        "title": "",
+        "body": "there is no layer here.\n\nthere was never a layer here.\n\nwho told you there was a layer here"
+      }
+    ]
+  },
+  "interests": [
+    {
+      "id": "i1",
+      "title": "[interest, e.g. drawing]",
+      "description": "[description]",
+      "image": "/placeholders/art-1.svg",
+      "tags": [
+        "art"
+      ],
+      "rating": 5,
+      "hiddenContent": "[something more personal about this interest that only shows at depth 2+]"
+    },
+    {
+      "id": "i2",
+      "title": "[interest, e.g. weird websites]",
+      "description": "[description]",
+      "image": "",
+      "tags": [
+        "internet"
+      ],
+      "rating": 4,
+      "hiddenContent": ""
+    },
+    {
+      "id": "i3",
+      "title": "[interest, e.g. small creatures]",
+      "description": "[description]",
+      "image": "",
+      "tags": [
+        "animals"
+      ],
+      "rating": 4,
+      "hiddenContent": ""
+    },
+    {
+      "id": "i4",
+      "title": "[interest]",
+      "description": "[description]",
+      "image": "",
+      "tags": [],
+      "rating": 3,
+      "hiddenContent": "[hidden note]"
+    }
+  ],
+  "dislikes": [
+    {
+      "id": "d1",
+      "text": "[dislike, e.g. loud rooms]",
+      "reason": ""
+    },
+    {
+      "id": "d2",
+      "text": "[dislike, e.g. being perceived]",
+      "reason": "(yes, on a website with an about page. it's complicated.)"
+    },
+    {
+      "id": "d3",
+      "text": "[dislike]",
+      "reason": ""
+    }
+  ],
+  "facts": [
+    {
+      "id": "f1",
+      "text": "[random fact about Chei]",
+      "minDepth": 0
+    },
+    {
+      "id": "f2",
+      "text": "[random fact about Chei]",
+      "minDepth": 0
+    },
+    {
+      "id": "f3",
+      "text": "[random fact about Chei]",
+      "minDepth": 0
+    },
+    {
+      "id": "f4",
+      "text": "[a fact that only appears once the visitor is deeper]",
+      "minDepth": 2
+    },
+    {
+      "id": "f5",
+      "text": "one of these facts is not true. Chei will not say which.",
+      "minDepth": 3
+    }
+  ],
+  "thoughts": [
+    {
+      "id": "th1",
+      "text": "[a thought Chei had recently]",
+      "minDepth": 0
+    },
+    {
+      "id": "th2",
+      "text": "[a thought Chei had at 3am]",
+      "minDepth": 0
+    },
+    {
+      "id": "th3",
+      "text": "[a thought Chei keeps having]",
+      "minDepth": 2
+    },
+    {
+      "id": "th4",
+      "text": "i think the website is watching me back",
+      "minDepth": 4
+    }
+  ],
+  "art": {
+    "intro": "drawings. some finished, some not. click things.",
+    "categories": [
+      {
+        "id": "illustrations",
+        "label": "illustrations"
+      },
+      {
+        "id": "characters",
+        "label": "characters"
+      },
+      {
+        "id": "sketches",
+        "label": "sketches"
+      },
+      {
+        "id": "finished",
+        "label": "finished art"
+      },
+      {
+        "id": "commissions",
+        "label": "commissions"
+      },
+      {
+        "id": "experiments",
+        "label": "experiments"
+      },
+      {
+        "id": "misc",
+        "label": "misc"
+      }
+    ],
+    "works": [
+      {
+        "id": "a1",
+        "title": "[ARTWORK 1]",
+        "image": "/placeholders/art-1.svg",
+        "description": "[artwork description]",
+        "date": "2026",
+        "category": "illustrations",
+        "tags": [
+          "placeholder",
+          "colour"
+        ],
+        "commissionStatus": "personal",
+        "hidden": {
+          "type": "alt-image",
+          "image": "/placeholders/art-1-alt.svg",
+          "text": "it changed.",
+          "href": "",
+          "clicks": 3,
+          "depthGain": 1
+        }
+      },
+      {
+        "id": "a2",
+        "title": "[ARTWORK 2]",
+        "image": "/placeholders/art-2.svg",
+        "description": "[artwork description]",
+        "date": "2026",
+        "category": "characters",
+        "tags": [
+          "placeholder",
+          "character"
+        ],
+        "commissionStatus": "personal",
+        "hidden": {
+          "type": "text",
+          "image": "",
+          "text": "this one has a secret: [HIDDEN NOTE]",
+          "href": "",
+          "clicks": 5,
+          "depthGain": 1
+        }
+      },
+      {
+        "id": "a3",
+        "title": "[ARTWORK 3]",
+        "image": "/placeholders/art-3.svg",
+        "description": "[artwork description]",
+        "date": "2025",
+        "category": "sketches",
+        "tags": [
+          "placeholder",
+          "sketch"
+        ],
+        "commissionStatus": "personal",
+        "hidden": {
+          "type": "none",
+          "image": "",
+          "text": "",
+          "href": "",
+          "clicks": 3,
+          "depthGain": 1
+        }
+      },
+      {
+        "id": "a4",
+        "title": "[ARTWORK 4]",
+        "image": "/placeholders/art-4.svg",
+        "description": "[artwork description]",
+        "date": "2025",
+        "category": "finished",
+        "tags": [
+          "placeholder"
+        ],
+        "commissionStatus": "example",
+        "hidden": {
+          "type": "none",
+          "image": "",
+          "text": "",
+          "href": "",
+          "clicks": 3,
+          "depthGain": 1
+        }
+      },
+      {
+        "id": "a5",
+        "title": "[COMMISSION EXAMPLE]",
+        "image": "/placeholders/art-5.svg",
+        "description": "[commission for someone]",
+        "date": "2025",
+        "category": "commissions",
+        "tags": [
+          "placeholder",
+          "commission"
+        ],
+        "commissionStatus": "commission",
+        "hidden": {
+          "type": "none",
+          "image": "",
+          "text": "",
+          "href": "",
+          "clicks": 3,
+          "depthGain": 1
+        }
+      },
+      {
+        "id": "a6",
+        "title": "[EXPERIMENT]",
+        "image": "/placeholders/art-6.svg",
+        "description": "[what was tried here]",
+        "date": "2024",
+        "category": "experiments",
+        "tags": [
+          "placeholder",
+          "weird"
+        ],
+        "commissionStatus": "personal",
+        "hidden": {
+          "type": "link",
+          "image": "",
+          "text": "there is a door in this one",
+          "href": "/secrets/nothing",
+          "clicks": 7,
+          "depthGain": 1
+        }
+      },
+      {
+        "id": "a7",
+        "title": "[MISC]",
+        "image": "/placeholders/art-2.svg",
+        "description": "[misc]",
+        "date": "2024",
+        "category": "misc",
+        "tags": [
+          "placeholder"
+        ],
+        "commissionStatus": "example",
+        "hidden": {
+          "type": "none",
+          "image": "",
+          "text": "",
+          "href": "",
+          "clicks": 3,
+          "depthGain": 1
+        }
+      }
+    ]
+  },
+  "commissions": {
+    "headline": "Commissions",
+    "intro": "[COMMISSION INFORMATION]\n\nThank you for your interest in commissioning me. Below you'll find what I offer, how the process works, and how to get in touch.",
+    "status": "open",
+    "statusNote": "Currently accepting a limited number of slots.",
+    "types": [
+      {
+        "id": "c1",
+        "name": "[Headshot / Bust]",
+        "price": "[$XX – $XX]",
+        "description": "[Description of what is included: shading, background, revisions, etc.]",
+        "examples": [
+          "a4",
+          "a5"
+        ],
+        "available": true
+      },
+      {
+        "id": "c2",
+        "name": "[Half Body]",
+        "price": "[$XX – $XX]",
+        "description": "[Description]",
+        "examples": [
+          "a1"
+        ],
+        "available": true
+      },
+      {
+        "id": "c3",
+        "name": "[Full Body]",
+        "price": "[$XXX+]",
+        "description": "[Description]",
+        "examples": [
+          "a2"
+        ],
+        "available": true
+      },
+      {
+        "id": "c4",
+        "name": "[Character Sheet]",
+        "price": "[$XXX+]",
+        "description": "[Description]",
+        "examples": [],
+        "available": false
+      }
+    ],
+    "process": [
+      "[Step 1 — Send a request with references and a short description.]",
+      "[Step 2 — I confirm the details, price, and timeline.]",
+      "[Step 3 — Payment is sent (50% upfront, or full, as agreed).]",
+      "[Step 4 — Sketch approval, then rendering, then delivery.]"
+    ],
+    "terms": [
+      "[Term — e.g. Personal use only unless a commercial license is agreed.]",
+      "[Term — e.g. Two rounds of minor revisions at the sketch stage.]",
+      "[Term — e.g. No refunds once rendering has begun.]",
+      "[Term — e.g. I reserve the right to decline any request.]"
+    ],
+    "turnaround": "[Typically 1–3 weeks depending on complexity and queue.]",
+    "contact": {
+      "method": "Email",
+      "value": "[your@email]",
+      "note": "[Or DM on your preferred platform.]"
+    },
+    "gallery": [
+      "a4",
+      "a5",
+      "a1",
+      "a2"
+    ],
+    "faq": [
+      {
+        "id": "q1",
+        "q": "[Do you draw X?]",
+        "a": "[Answer]"
+      },
+      {
+        "id": "q2",
+        "q": "[Can I use the art commercially?]",
+        "a": "[Answer]"
+      }
+    ]
+  },
+  "games": {
+    "lossMessages": [
+      "oops",
+      "again?",
+      "you are not very good at this",
+      "it's okay. keep going.",
+      "they noticed.",
+      "why do you keep losing",
+      "do you want them to stay?",
+      "they like it here now",
+      "..."
+    ],
+    "eyeThreshold": 3,
+    "transformThreshold": 8,
+    "reaction": {
+      "rounds": 5,
+      "windowMs": 600
+    },
+    "memory": {
+      "startLength": 3,
+      "winLength": 7
+    },
+    "clicker": {
+      "milestones": [
+        {
+          "at": 10,
+          "text": "ok"
+        },
+        {
+          "at": 25,
+          "text": "you can stop"
+        },
+        {
+          "at": 50,
+          "text": "it's warm now"
+        },
+        {
+          "at": 100,
+          "text": "it's getting used to you"
+        },
+        {
+          "at": 200,
+          "text": "please"
+        },
+        {
+          "at": 300,
+          "text": "it moved."
+        },
+        {
+          "at": 333,
+          "text": "it remembers your hands"
+        },
+        {
+          "at": 500,
+          "text": "you found the bottom of the button"
+        }
+      ],
+      "moveAt": 300,
+      "resetOnMiss": true
+    },
+    "crossing": {
+      "cols": 9,
+      "startLanes": 4,
+      "maxLanes": 8,
+      "baseSpeed": 1.6,
+      "speedStep": 0.35,
+      "spawnGap": 3.2,
+      "minGap": 1.7,
+      "winCrossings": 3,
+      "weirdFrom": 2
+    },
+    "impossible": {
+      "label": "click me",
+      "fleeDistance": 140,
+      "catchableAfter": 25
+    }
+  },
+  "interactions": [
+    {
+      "id": "logo-five",
+      "note": "Clicking the name/logo 5 times opens the back room.",
+      "trigger": {
+        "type": "click",
+        "target": "site-logo",
+        "count": 5
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "unlockSecret",
+          "secret": "backroom"
+        },
+        {
+          "type": "depth",
+          "amount": 1
+        },
+        {
+          "type": "message",
+          "text": "hm. a door.",
+          "style": "whisper"
+        },
+        {
+          "type": "sound",
+          "name": "pop"
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "avatar-poke",
+      "note": "Poking the avatar 7 times.",
+      "trigger": {
+        "type": "click",
+        "target": "home-avatar",
+        "count": 7
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "message",
+          "text": "stop poking me",
+          "style": "note"
+        },
+        {
+          "type": "depth",
+          "amount": 1
+        },
+        {
+          "type": "glitch",
+          "ms": 300
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "avatar-stare",
+      "note": "Hovering the avatar for a few seconds shows the mirror.",
+      "trigger": {
+        "type": "hover",
+        "target": "home-avatar",
+        "count": 1
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "unlockSecret",
+          "secret": "mirror"
+        },
+        {
+          "type": "message",
+          "text": "...you're staring.",
+          "style": "whisper"
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "dead-button",
+      "note": "The 'dead' button on the home page works after 6 clicks.",
+      "trigger": {
+        "type": "click",
+        "target": "dead-button",
+        "count": 6
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "reveal",
+          "target": "dead-button-reveal"
+        },
+        {
+          "type": "message",
+          "text": "oh. it works.",
+          "style": "system"
+        },
+        {
+          "type": "depth",
+          "amount": 1
+        },
+        {
+          "type": "sound",
+          "name": "blip"
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "bg-listen",
+      "note": "Clicking the background word 'listen' opens the drawer.",
+      "trigger": {
+        "type": "click",
+        "target": "bg-listen",
+        "count": 1
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "unlockSecret",
+          "secret": "drawer"
+        },
+        {
+          "type": "depth",
+          "amount": 1
+        },
+        {
+          "type": "sound",
+          "name": "pop"
+        },
+        {
+          "type": "navigate",
+          "to": "/secrets/drawer"
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "corner-fold",
+      "note": "The folded page corner.",
+      "trigger": {
+        "type": "click",
+        "target": "page-corner",
+        "count": 3
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "message",
+          "text": "the corner folds back. there's writing under it.",
+          "style": "whisper"
+        },
+        {
+          "type": "reveal",
+          "target": "corner-note"
+        },
+        {
+          "type": "depth",
+          "amount": 1
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "sticker-cat",
+      "note": "The cat sticker, clicked 9 times.",
+      "trigger": {
+        "type": "click",
+        "target": "sticker-cat",
+        "count": 9
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "message",
+          "text": "mrrp.",
+          "style": "note"
+        },
+        {
+          "type": "depth",
+          "amount": 1
+        },
+        {
+          "type": "sound",
+          "name": "pop"
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "keys-hello",
+      "note": "Typing 'hello' anywhere opens the guestbook.",
+      "trigger": {
+        "type": "keys",
+        "target": "hello",
+        "count": 1
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "message",
+          "text": "hi.",
+          "style": "whisper"
+        },
+        {
+          "type": "unlockSecret",
+          "secret": "guestbook"
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "keys-name",
+      "note": "Typing the name.",
+      "trigger": {
+        "type": "keys",
+        "target": "chei",
+        "count": 1
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "message",
+          "text": "that's my name.",
+          "style": "whisper"
+        },
+        {
+          "type": "depth",
+          "amount": 1
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "keys-eyes",
+      "note": "Typing 'eyes' once deep enough.",
+      "trigger": {
+        "type": "keys",
+        "target": "eyes",
+        "count": 1
+      },
+      "conditions": {
+        "minDepth": 3
+      },
+      "actions": [
+        {
+          "type": "spawn",
+          "object": "eye",
+          "count": 3
+        },
+        {
+          "type": "message",
+          "text": "you asked for them.",
+          "style": "glitch"
+        },
+        {
+          "type": "sound",
+          "name": "hum"
+        }
+      ],
+      "once": false,
+      "enabled": true
+    },
+    {
+      "id": "about-return",
+      "note": "Visiting the about page three times.",
+      "trigger": {
+        "type": "visits",
+        "target": "/about",
+        "count": 3
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "message",
+          "text": "you keep coming back here.",
+          "style": "whisper"
+        },
+        {
+          "type": "depth",
+          "amount": 1
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "depth-3",
+      "note": "Reaching depth 3.",
+      "trigger": {
+        "type": "depth",
+        "target": "3",
+        "count": 1
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "message",
+          "text": "something is different now.",
+          "style": "system"
+        },
+        {
+          "type": "glitch",
+          "ms": 500
+        },
+        {
+          "type": "setImage",
+          "target": "home-avatar",
+          "src": "/placeholders/avatar-alt.svg"
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "depth-5",
+      "note": "Reaching depth 5 unlocks the basement key.",
+      "trigger": {
+        "type": "depth",
+        "target": "5",
+        "count": 1
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "unlockSecret",
+          "secret": "basement-key"
+        },
+        {
+          "type": "message",
+          "text": "the floor is thinner here.",
+          "style": "glitch"
+        },
+        {
+          "type": "sound",
+          "name": "hum"
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "depth-7",
+      "note": "Reaching depth 7.",
+      "trigger": {
+        "type": "depth",
+        "target": "7",
+        "count": 1
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "unlockSecret",
+          "secret": "the-end"
+        },
+        {
+          "type": "message",
+          "text": "?",
+          "style": "glitch"
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "losses-5",
+      "note": "Losing five games total unlocks the static page.",
+      "trigger": {
+        "type": "gameloss",
+        "target": "5",
+        "count": 1
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "unlockSecret",
+          "secret": "static"
+        },
+        {
+          "type": "depth",
+          "amount": 1
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "scroll-bottom",
+      "note": "Scrolling all the way down the home page.",
+      "trigger": {
+        "type": "scroll",
+        "target": "0.97",
+        "count": 1
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "reveal",
+          "target": "footer-secret"
+        },
+        {
+          "type": "message",
+          "text": "there's more under the floor.",
+          "style": "whisper"
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "idle-whisper",
+      "note": "Sitting still for a minute when deep enough.",
+      "trigger": {
+        "type": "idle",
+        "target": "60",
+        "count": 1
+      },
+      "conditions": {
+        "minDepth": 2
+      },
+      "actions": [
+        {
+          "type": "message",
+          "text": "are you still there?",
+          "style": "whisper"
+        }
+      ],
+      "once": false,
+      "enabled": true
+    },
+    {
+      "id": "home-returns",
+      "note": "Coming home many times.",
+      "trigger": {
+        "type": "visits",
+        "target": "/",
+        "count": 6
+      },
+      "conditions": {
+        "minDepth": 2
+      },
+      "actions": [
+        {
+          "type": "message",
+          "text": "welcome back. again.",
+          "style": "whisper"
+        },
+        {
+          "type": "flag",
+          "key": "home-changed",
+          "value": true
+        }
+      ],
+      "once": true,
+      "enabled": true
+    },
+    {
+      "id": "depth-6",
+      "note": "Reaching depth 6: a fake window and faces appear by themselves.",
+      "trigger": {
+        "type": "depth",
+        "target": "6",
+        "count": 1
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "spawn",
+          "object": "window",
+          "count": 1
+        },
+        {
+          "type": "spawn",
+          "object": "eye",
+          "count": 2
+        },
+        {
+          "type": "message",
+          "text": "this window was not here before.",
+          "style": "system"
+        },
+        {
+          "type": "sound",
+          "name": "glitch"
+        }
+      ],
+      "once": true,
+      "enabled": true
+    }
+  ],
+  "secrets": [
+    {
+      "id": "backroom",
+      "slug": "backroom",
+      "title": "the back room",
+      "body": "you clicked my name five times.\n\nthat's a lot of times.\n\n[SECRET PAGE CONTENT — this is the first hidden page. put something small and personal here.]\n\nthere are other rooms. some of them are behind words.",
+      "style": "note",
+      "urlUnlockable": false,
+      "depthGain": 1,
+      "leadsTo": [
+        "drawer"
+      ],
+      "unlockMessage": "a door opened somewhere"
+    },
+    {
+      "id": "drawer",
+      "slug": "drawer",
+      "title": "the drawer",
+      "body": "[SECRET PAGE CONTENT]\n\ninside the drawer:\n- a receipt from [year]\n- three identical keys\n- a note that says \"listen\"\n\nyou already did that part.",
+      "style": "shrine",
+      "urlUnlockable": false,
+      "depthGain": 1,
+      "leadsTo": [
+        "guestbook"
+      ],
+      "unlockMessage": "the drawer opened"
+    },
+    {
+      "id": "guestbook",
+      "slug": "guestbook",
+      "title": "guestbook",
+      "body": "[GUESTBOOK — this looks like an old guestbook. it can be edited to include real messages or fake ones.]\n\n> 2003-11-04 — cool site!!\n> 2009-02-19 — is anyone still here\n> 2014-07-30 — the eyes are new\n> [today] — hello",
+      "style": "notice",
+      "urlUnlockable": false,
+      "depthGain": 1,
+      "leadsTo": [],
+      "unlockMessage": "the guestbook is open"
+    },
+    {
+      "id": "mirror",
+      "slug": "mirror",
+      "title": "mirror",
+      "body": "you stared at the picture for a long time.\n\nit stared back. that's what pictures do.\n\n[SECRET PAGE CONTENT — a note about being perceived, or something completely unrelated.]",
+      "style": "window",
+      "urlUnlockable": false,
+      "depthGain": 1,
+      "leadsTo": [
+        "static"
+      ],
+      "unlockMessage": "the mirror is open"
+    },
+    {
+      "id": "static",
+      "slug": "static",
+      "title": "static",
+      "body": "> connection established\n> user has lost 5 games\n> user has been assigned observers\n> observers: [count]\n> observers are friendly\n> observers are friendly\n> observers are friendly\n\n[SECRET PAGE CONTENT]",
+      "style": "terminal",
+      "urlUnlockable": false,
+      "depthGain": 1,
+      "leadsTo": [
+        "basement-key"
+      ],
+      "unlockMessage": "static is listening"
+    },
+    {
+      "id": "basement-key",
+      "slug": "basement-key",
+      "title": "a key",
+      "body": "there's a door under the about page.\n\nit wants a code. the code is in pieces. the pieces are in the games.\n\n[/door](/door)",
+      "style": "void",
+      "urlUnlockable": false,
+      "depthGain": 1,
+      "leadsTo": [],
+      "unlockMessage": "you found a key"
+    },
+    {
+      "id": "nothing",
+      "slug": "nothing",
+      "title": "nothing",
+      "body": "there is nothing here.\n\nthis page exists so that when you type /secrets/nothing into the address bar, something is here.\n\nso now there is something here.\n\n[SECRET PAGE CONTENT]",
+      "style": "note",
+      "urlUnlockable": true,
+      "depthGain": 1,
+      "leadsTo": [
+        "mirror"
+      ],
+      "unlockMessage": "you found nothing"
+    },
+    {
+      "id": "the-end",
+      "slug": "the-end",
+      "title": "?",
+      "body": "you have not found everything.\n\nyou will not be told what is left.\n\n[FINAL SECRET CONTENT — or leave it like this.]\n\nthank you for visiting my website.",
+      "style": "void",
+      "urlUnlockable": false,
+      "depthGain": 0,
+      "leadsTo": [],
+      "unlockMessage": "?"
+    }
+  ],
+  "deepLevels": [
+    {
+      "depth": 0,
+      "name": "normal website",
+      "note": "",
+      "backgroundWords": [
+        "hi",
+        "welcome",
+        "art",
+        "drawings",
+        "click things",
+        "listen",
+        "look around",
+        "chei"
+      ],
+      "whispers": []
+    },
+    {
+      "depth": 1,
+      "name": "weird website",
+      "note": "",
+      "backgroundWords": [
+        "hi again",
+        "you clicked something",
+        "listen",
+        "look closer",
+        "there's more",
+        "keep going",
+        "chei chei chei"
+      ],
+      "whispers": [
+        "hi again"
+      ]
+    },
+    {
+      "depth": 2,
+      "name": "strange website",
+      "note": "",
+      "backgroundWords": [
+        "you found this",
+        "listen",
+        "the page remembers",
+        "not everything is on the page",
+        "some words are doors",
+        "is this still the same website"
+      ],
+      "whispers": [
+        "the page remembers you",
+        "try typing something"
+      ]
+    },
+    {
+      "depth": 3,
+      "name": "something is wrong",
+      "note": "",
+      "backgroundWords": [
+        "this is fine",
+        "this is not the website you opened",
+        "listen",
+        "the buttons changed their names",
+        "who wrote this",
+        "i wrote this",
+        "did i"
+      ],
+      "whispers": [
+        "some of the buttons are lying now",
+        "the pictures move when you don't look"
+      ]
+    },
+    {
+      "depth": 4,
+      "name": "very strange",
+      "note": "",
+      "backgroundWords": [
+        "there is a basement",
+        "there is a basement",
+        "there is a basement",
+        "listen",
+        "it's under the about page",
+        "don't scroll too far",
+        "scroll too far"
+      ],
+      "whispers": [
+        "there is a basement",
+        "you could leave. the tab is right there."
+      ]
+    },
+    {
+      "depth": 5,
+      "name": "unsettling",
+      "note": "",
+      "backgroundWords": [
+        "they are friendly",
+        "they are friendly",
+        "they are friendly",
+        "the eyes are only decoration",
+        "the floor is thinner here",
+        "listen listen listen"
+      ],
+      "whispers": [
+        "the eyes are only decoration",
+        "they like it when you lose"
+      ]
+    },
+    {
+      "depth": 6,
+      "name": "hidden website",
+      "note": "",
+      "backgroundWords": [
+        "this is the other website",
+        "you were always on this website",
+        "chei is not here right now",
+        "leave a message",
+        "leave",
+        "the commission page is safe",
+        "go there if you need to"
+      ],
+      "whispers": [
+        "the commission page is safe. go there if you need to."
+      ]
+    },
+    {
+      "depth": 7,
+      "name": "???",
+      "note": "",
+      "backgroundWords": [
+        "?",
+        "??",
+        "???",
+        "you have not found everything",
+        "you will not find everything",
+        "thank you for visiting"
+      ],
+      "whispers": [
+        "thank you for visiting",
+        "you can stop now"
+      ],
+      "title": "?"
+    },
+    {
+      "depth": 8,
+      "name": "the basement",
+      "note": "",
+      "backgroundWords": [
+        "under",
+        "it was here before the house",
+        "the light is on",
+        "under",
+        "under"
+      ],
+      "whispers": [
+        "you left the light on"
+      ],
+      "title": "…"
+    },
+    {
+      "depth": 9,
+      "name": "below",
+      "note": "",
+      "backgroundWords": [
+        "below",
+        "below",
+        "below",
+        "you were not supposed to come this far"
+      ],
+      "whispers": [
+        "you were not supposed to come this far"
+      ],
+      "title": "…"
+    }
+  ],
+  "theme": {
+    "paper": "#f6efe2",
+    "ink": "#2b2118",
+    "accent": "#ff6fa8",
+    "accent2": "#b6ff3b",
+    "accent3": "#5b8cff",
+    "bodyFont": "sans",
+    "headingFont": "display",
+    "normalAccent": "#2f5d62"
+  },
+  "eyes": {
+    "enabled": true,
+    "depthCounts": [
+      0,
+      1,
+      3,
+      5,
+      8,
+      14,
+      22,
+      34,
+      44,
+      60
+    ],
+    "lossWeight": 1,
+    "perSecret": 0.5,
+    "maxEyes": 48,
+    "shyRadius": 140
+  },
+  "settings": {
+    "persistProgress": false,
+    "startDepth": 0,
+    "stagePickerPublic": false
+  },
+  "progression": {
+    "requiredFragments": 0,
+    "fragments": [
+      {
+        "id": "frag-quick",
+        "name": "the quick one",
+        "description": "a shard of something. it hums when you hold it still.",
+        "game": "reaction",
+        "requirement": {
+          "type": "wins",
+          "value": 1
+        },
+        "location": "win the reaction game once (5 rounds in a row)",
+        "hint": "something in the room rewards being fast."
+      },
+      {
+        "id": "frag-cold",
+        "name": "the cold one",
+        "description": "it is colder than the room.",
+        "game": "memory",
+        "requirement": {
+          "type": "wins",
+          "value": 1
+        },
+        "location": "win the memory game (repeat a sequence of 7)",
+        "hint": "something in the room rewards remembering."
+      },
+      {
+        "id": "frag-warm",
+        "name": "the warm one",
+        "description": "it remembers your hands.",
+        "game": "clicker",
+        "requirement": {
+          "type": "clicks",
+          "value": 333
+        },
+        "location": "the button: reach 333 clicks",
+        "hint": "the button has a number it likes."
+      },
+      {
+        "id": "frag-buried",
+        "name": "the buried one",
+        "description": "dirt in the grooves. it was under something that was under something.",
+        "game": "hideseek",
+        "requirement": {
+          "type": "item",
+          "value": 1,
+          "itemId": "buried-key"
+        },
+        "location": "hide & seek, the yard: the bush at column 5, row 0 (push into it 3 times, then step in)",
+        "hint": "something is under the leaves in the yard."
+      },
+      {
+        "id": "frag-fast",
+        "name": "the fast one",
+        "description": "scuffed. it was picked up off a road.",
+        "game": "crossing",
+        "requirement": {
+          "type": "crossings",
+          "value": 3
+        },
+        "location": "the road: cross 3 times in one run",
+        "hint": "cross the road until it stops."
+      }
+    ],
+    "items": [
+      {
+        "id": "coin",
+        "name": "a coin",
+        "description": "warm. someone was holding it recently.",
+        "laterDescription": "",
+        "icon": "◎",
+        "image": "",
+        "depthRequired": 0,
+        "location": {
+          "game": "hideseek",
+          "area": "yard",
+          "cell": "4,0",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "common",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "pencil",
+        "name": "a pencil",
+        "description": "chewed at the end. not by you.",
+        "laterDescription": "",
+        "icon": "✎",
+        "image": "",
+        "depthRequired": 0,
+        "location": {
+          "game": "hideseek",
+          "area": "yard",
+          "cell": "7,1",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "common",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "button",
+        "name": "a button",
+        "description": "from a coat. not yours.",
+        "laterDescription": "",
+        "icon": "●",
+        "image": "",
+        "depthRequired": 0,
+        "location": {
+          "game": "hideseek",
+          "area": "yard",
+          "cell": "0,4",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "common",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "paper",
+        "name": "a folded paper",
+        "description": "blank. it has been folded many times.",
+        "laterDescription": "the paper. there is a fold in it now that you didn't make.",
+        "icon": "▭",
+        "image": "",
+        "depthRequired": 0,
+        "location": {
+          "game": "hideseek",
+          "area": "yard",
+          "cell": "3,5",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "common",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "toy",
+        "name": "a small toy",
+        "description": "an animal with the paint rubbed off its face.",
+        "laterDescription": "",
+        "icon": "♘",
+        "image": "",
+        "depthRequired": 0,
+        "location": {
+          "game": "hideseek",
+          "area": "yard",
+          "cell": "6,5",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "common",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "buried-key",
+        "name": "a piece of a key",
+        "description": "wrapped in leaves. it is a piece of a key.",
+        "laterDescription": "",
+        "icon": "⚿",
+        "image": "",
+        "depthRequired": 0,
+        "location": {
+          "game": "hideseek",
+          "area": "yard",
+          "cell": "5,0",
+          "under": "bush"
+        },
+        "discoveryMethod": "find",
+        "rarity": "rare",
+        "behavior": "static",
+        "hidden": true,
+        "fragmentId": "frag-buried"
+      },
+      {
+        "id": "device",
+        "name": "an unknown device",
+        "description": "one button. it is warm on one side.",
+        "laterDescription": "",
+        "icon": "▣",
+        "image": "",
+        "depthRequired": 2,
+        "location": {
+          "game": "hideseek",
+          "area": "yard",
+          "cell": "1,1",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "uncommon",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "doll",
+        "name": "a broken doll",
+        "description": "its eyes are fine.",
+        "laterDescription": "",
+        "icon": "☻",
+        "image": "",
+        "depthRequired": 2,
+        "location": {
+          "game": "hideseek",
+          "area": "yard",
+          "cell": "3,4",
+          "under": "bush"
+        },
+        "discoveryMethod": "find",
+        "rarity": "uncommon",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "symbol",
+        "name": "a flat stone",
+        "description": "a symbol scratched into it. you almost know it.",
+        "laterDescription": "",
+        "icon": "⌘",
+        "image": "",
+        "depthRequired": 3,
+        "location": {
+          "game": "hideseek",
+          "area": "yard",
+          "cell": "5,3",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "common",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "photograph",
+        "name": "a photograph",
+        "description": "of this yard, taken from where you are standing.",
+        "laterDescription": "the photograph. the rocks in it are where you moved them.",
+        "icon": "▧",
+        "image": "",
+        "depthRequired": 3,
+        "location": {
+          "game": "hideseek",
+          "area": "yard",
+          "cell": "5,6",
+          "under": "bush"
+        },
+        "discoveryMethod": "find",
+        "rarity": "rare",
+        "behavior": "changed",
+        "hidden": true
+      },
+      {
+        "id": "cold-key",
+        "name": "a key",
+        "description": "it doesn't fit anything you know of.",
+        "laterDescription": "",
+        "icon": "⚷",
+        "image": "",
+        "depthRequired": 0,
+        "location": {
+          "game": "hideseek",
+          "area": "shed",
+          "cell": "2,1",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "common",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "shed-note",
+        "name": "a note",
+        "description": "'the door is under the about page.'",
+        "laterDescription": "",
+        "icon": "✉",
+        "image": "",
+        "depthRequired": 1,
+        "location": {
+          "game": "hideseek",
+          "area": "shed",
+          "cell": "3,4",
+          "under": "bush"
+        },
+        "discoveryMethod": "find",
+        "rarity": "common",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "no-purpose",
+        "name": "an object",
+        "description": "no obvious purpose. it has a handle on the inside.",
+        "laterDescription": "",
+        "icon": "⌂",
+        "image": "",
+        "depthRequired": 2,
+        "location": {
+          "game": "hideseek",
+          "area": "shed",
+          "cell": "0,3",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "common",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "corrupted-thing",
+        "name": "s̶o̶m̶e̶t̶h̶i̶n̶g̶",
+        "description": "it doesn't render right. it is trying.",
+        "laterDescription": "",
+        "icon": "▓",
+        "image": "",
+        "depthRequired": 3,
+        "location": {
+          "game": "hideseek",
+          "area": "shed",
+          "cell": "6,1",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "uncommon",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "twitcher",
+        "name": "a thing that moved",
+        "description": "it moved when you weren't looking. it is not moving now.",
+        "laterDescription": "",
+        "icon": "◔",
+        "image": "",
+        "depthRequired": 4,
+        "location": {
+          "game": "hideseek",
+          "area": "shed",
+          "cell": "5,3",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "rare",
+        "behavior": "twitch",
+        "hidden": true
+      },
+      {
+        "id": "the-rock",
+        "name": "the rock that was here",
+        "description": "you have moved [rocks] rocks. this one was counting.",
+        "laterDescription": "the rock again. [rocks] now. it is still counting.",
+        "icon": "●",
+        "image": "",
+        "depthRequired": 4,
+        "location": {
+          "game": "hideseek",
+          "area": "shed",
+          "cell": "6,5",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "common",
+        "behavior": "changed",
+        "hidden": true
+      },
+      {
+        "id": "vanisher",
+        "name": "something that isn't there",
+        "description": "it is not there when you look at it. it is there when you don't.",
+        "laterDescription": "",
+        "icon": "◌",
+        "image": "",
+        "depthRequired": 5,
+        "location": {
+          "game": "hideseek",
+          "area": "shed",
+          "cell": "1,5",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "rare",
+        "behavior": "vanish",
+        "hidden": true
+      },
+      {
+        "id": "watcher",
+        "name": "it was looking up",
+        "description": "it was under the rock. it was looking up before you moved the rock.",
+        "laterDescription": "it looks at you the way it looked at you before. it remembers.",
+        "icon": "◉",
+        "image": "",
+        "depthRequired": 6,
+        "location": {
+          "game": "hideseek",
+          "area": "shed",
+          "cell": "8,3",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "???",
+        "behavior": "watch",
+        "hidden": true
+      },
+      {
+        "id": "nothing-here",
+        "name": "nothing",
+        "description": "there was something here. it left when it heard you.",
+        "laterDescription": "",
+        "icon": "·",
+        "image": "",
+        "depthRequired": 4,
+        "location": {
+          "game": "hideseek",
+          "area": "dry",
+          "cell": "8,3",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "common",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "dry-piece",
+        "name": "a piece of something bigger",
+        "description": "it fits nothing in your pocket. yet.",
+        "laterDescription": "",
+        "icon": "▱",
+        "image": "",
+        "depthRequired": 4,
+        "location": {
+          "game": "hideseek",
+          "area": "dry",
+          "cell": "6,0",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "common",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "second-coin",
+        "name": "a coin",
+        "description": "you already have one of these. this is the same one.",
+        "laterDescription": "",
+        "icon": "◎",
+        "image": "",
+        "depthRequired": 5,
+        "location": {
+          "game": "hideseek",
+          "area": "dry",
+          "cell": "0,0",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "uncommon",
+        "behavior": "changed",
+        "hidden": true
+      },
+      {
+        "id": "impossible-thing",
+        "name": "the thing that shouldn't be here",
+        "description": "it is from upstairs. it should be upstairs.",
+        "laterDescription": "",
+        "icon": "▮",
+        "image": "",
+        "depthRequired": 5,
+        "location": {
+          "game": "hideseek",
+          "area": "dry",
+          "cell": "4,3",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "rare",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "an-eye",
+        "name": "an eye",
+        "description": "just the one.",
+        "laterDescription": "",
+        "icon": "◉",
+        "image": "",
+        "depthRequired": 6,
+        "location": {
+          "game": "hideseek",
+          "area": "dry",
+          "cell": "2,5",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "???",
+        "behavior": "watch",
+        "hidden": true
+      },
+      {
+        "id": "aware",
+        "name": "it turned to face you",
+        "description": "it turns to face you before you reach it.",
+        "laterDescription": "it knew you would come back.",
+        "icon": "◉",
+        "image": "",
+        "depthRequired": 7,
+        "location": {
+          "game": "hideseek",
+          "area": "dry",
+          "cell": "6,5",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "???",
+        "behavior": "watch",
+        "hidden": true
+      },
+      {
+        "id": "your-name",
+        "name": "a tag",
+        "description": "a tag with a name on it. the name is [name]. you have found [found] things and moved [rocks] rocks and it knows.",
+        "laterDescription": "",
+        "icon": "⌗",
+        "image": "",
+        "depthRequired": 7,
+        "location": {
+          "game": "hideseek",
+          "area": "dry",
+          "cell": "4,6",
+          "under": "rock"
+        },
+        "discoveryMethod": "find",
+        "rarity": "???",
+        "behavior": "changed",
+        "hidden": true
+      },
+      {
+        "id": "given-up-button",
+        "name": "a button that gave up",
+        "description": "it is very tired.",
+        "laterDescription": "",
+        "icon": "◍",
+        "image": "",
+        "depthRequired": 0,
+        "location": {
+          "game": "impossible",
+          "under": "dirt"
+        },
+        "discoveryMethod": "reward",
+        "rarity": "common",
+        "behavior": "static",
+        "hidden": true,
+        "requirement": {
+          "type": "wins",
+          "value": 1
+        }
+      },
+      {
+        "id": "warm-coin",
+        "name": "a warm coin",
+        "description": "from under the button. it was under there the whole time.",
+        "laterDescription": "",
+        "icon": "◎",
+        "image": "",
+        "depthRequired": 0,
+        "location": {
+          "game": "clicker",
+          "under": "dirt"
+        },
+        "discoveryMethod": "reward",
+        "rarity": "common",
+        "behavior": "static",
+        "hidden": true,
+        "requirement": {
+          "type": "clicks",
+          "value": 100
+        }
+      },
+      {
+        "id": "squashed-thing",
+        "name": "something from the road",
+        "description": "flat. it was a vehicle once, maybe. it has an eye.",
+        "laterDescription": "",
+        "icon": "▬",
+        "image": "",
+        "depthRequired": 0,
+        "location": {
+          "game": "crossing",
+          "under": "dirt"
+        },
+        "discoveryMethod": "reward",
+        "rarity": "uncommon",
+        "behavior": "static",
+        "hidden": true,
+        "requirement": {
+          "type": "crossings",
+          "value": 5
+        }
+      },
+      {
+        "id": "torn-note",
+        "name": "a torn note",
+        "description": "the code is on it, in pencil. the door is under the about page.",
+        "laterDescription": "",
+        "icon": "✂",
+        "image": "",
+        "depthRequired": 0,
+        "location": {
+          "game": "none",
+          "under": "dirt"
+        },
+        "discoveryMethod": "pickup",
+        "rarity": "rare",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "photo-wall",
+        "name": "a photograph from the wall",
+        "description": "it is of the room you are in, with the door open.",
+        "laterDescription": "the door in the photograph is closed now.",
+        "icon": "▧",
+        "image": "",
+        "depthRequired": 0,
+        "location": {
+          "game": "basement",
+          "under": "dirt",
+          "room": "hall"
+        },
+        "discoveryMethod": "pickup",
+        "rarity": "rare",
+        "behavior": "changed",
+        "hidden": true
+      },
+      {
+        "id": "chair-splinter",
+        "name": "a splinter",
+        "description": "from the chair. the chair looks the same.",
+        "laterDescription": "",
+        "icon": "⟋",
+        "image": "",
+        "depthRequired": 0,
+        "location": {
+          "game": "basement",
+          "under": "dirt",
+          "room": "room"
+        },
+        "discoveryMethod": "pickup",
+        "rarity": "common",
+        "behavior": "static",
+        "hidden": true
+      },
+      {
+        "id": "something-below",
+        "name": "something from below",
+        "description": "heavier than it looks. warm. it is [visits] visits old.",
+        "laterDescription": "",
+        "icon": "▮",
+        "image": "",
+        "depthRequired": 0,
+        "location": {
+          "game": "basement",
+          "under": "dirt",
+          "room": "below"
+        },
+        "discoveryMethod": "pickup",
+        "rarity": "???",
+        "behavior": "changed",
+        "hidden": true
+      }
+    ],
+    "hideSeek": {
+      "areas": [
+        {
+          "id": "yard",
+          "name": "the yard",
+          "layout": [
+            "....O#...",
+            ".O...#.O.",
+            "..P......",
+            ".....O..x",
+            "O..#.....",
+            "...O..O..",
+            "x....#..."
+          ],
+          "depthRequired": 0,
+          "intro": "push the rocks. see what's under them. the bushes take a few tries."
+        },
+        {
+          "id": "shed",
+          "name": "behind the shed",
+          "layout": [
+            "#..O....#",
+            "..O...O..",
+            ".P...#...",
+            "O....O..O",
+            "...#.....",
+            ".O....O..",
+            "....x...."
+          ],
+          "depthRequired": 1,
+          "intro": "it's darker back here. the rocks are heavier."
+        },
+        {
+          "id": "dry",
+          "name": "the dry patch",
+          "layout": [
+            "O.O.O.O.O",
+            ".........",
+            "..P..#...",
+            "O...O...O",
+            ".........",
+            "#.O...O.#",
+            "....O...."
+          ],
+          "depthRequired": 4,
+          "intro": "nothing grows here. the rocks are in a row. someone put them there."
+        }
+      ],
+      "moveBudget": 140,
+      "bushHits": 3
+    },
+    "door": {
+      "title": "ACCESS · B",
+      "prompt": "insert key",
+      "noKeyText": "no key. the door is patient.",
+      "wrongMessages": [
+        "no.",
+        "that isn't it.",
+        "you're guessing.",
+        "the pieces are in the games.",
+        "it heard that.",
+        "it is counting.",
+        "try again. it likes it when you try.",
+        "…"
+      ],
+      "successText": "…yes. come in.",
+      "hint": "the code is on the back of the note.",
+      "hintAfter": "the games have the pieces. the pocket has the note."
+    },
+    "messages": {
+      "fragmentFound": "something clicked into place",
+      "allFragments": "the pieces are warm. look in your pocket.",
+      "itemFound": "found",
+      "noteBack": "on the back, in pencil: the door is under the about page. it wants this.",
+      "pocketHint": "the games have pieces of something. the pocket keeps what you find."
+    }
+  },
+  "basement": {
+    "title": "…",
+    "rooms": [
+      {
+        "id": "hall",
+        "slug": "hall",
+        "title": "",
+        "level": 1,
+        "body": "the light is on.\n\nsomeone left it on.",
+        "later": "the light is still on. you left it on.",
+        "labels": [
+          {
+            "id": "l1",
+            "text": "why",
+            "to": "corridor",
+            "x": 12,
+            "y": 22,
+            "behavior": "normal"
+          },
+          {
+            "id": "l2",
+            "text": "WATCH",
+            "to": "watch",
+            "x": 70,
+            "y": 12,
+            "behavior": "flicker"
+          },
+          {
+            "id": "l3",
+            "text": "[ ]",
+            "to": "corridor",
+            "x": 44,
+            "y": 78,
+            "behavior": "wrong",
+            "really": "room"
+          },
+          {
+            "id": "l4",
+            "text": "BACK",
+            "to": "/",
+            "x": 86,
+            "y": 90,
+            "behavior": "normal"
+          }
+        ],
+        "objects": [
+          {
+            "id": "lamp",
+            "kind": "lamp",
+            "text": "",
+            "later": "",
+            "x": 50,
+            "y": 18,
+            "size": 1
+          },
+          {
+            "id": "chair",
+            "kind": "chair",
+            "text": "a normal chair.",
+            "later": "the chair has moved. it says it hasn't.",
+            "x": 24,
+            "y": 64,
+            "size": 1
+          },
+          {
+            "id": "door",
+            "kind": "door",
+            "text": "a door.",
+            "later": "",
+            "x": 80,
+            "y": 60,
+            "size": 1,
+            "to": "corridor"
+          },
+          {
+            "id": "wall",
+            "kind": "wall-text",
+            "text": "it was here\nbefore the house",
+            "later": "it was here\nbefore you",
+            "x": 62,
+            "y": 42,
+            "size": 1
+          },
+          {
+            "id": "photo",
+            "kind": "object",
+            "text": "a photograph pinned to the wall.",
+            "later": "the pin is still there.",
+            "x": 68,
+            "y": 30,
+            "size": 1,
+            "itemId": "photo-wall"
+          },
+          {
+            "id": "stain",
+            "kind": "stain",
+            "text": "",
+            "later": "",
+            "x": 40,
+            "y": 88,
+            "size": 1
+          }
+        ],
+        "light": "lamp",
+        "tint": ""
+      },
+      {
+        "id": "corridor",
+        "slug": "corridor",
+        "title": "corridor",
+        "level": 2,
+        "body": "it is longer than the house.\n\nthe doors are all on one side.",
+        "later": "the corridor is shorter now. one door is missing.",
+        "labels": [
+          {
+            "id": "l1",
+            "text": "back",
+            "to": "/basement",
+            "x": 8,
+            "y": 10,
+            "behavior": "normal"
+          },
+          {
+            "id": "l2",
+            "text": "down",
+            "to": "below",
+            "x": 50,
+            "y": 93,
+            "behavior": "normal"
+          },
+          {
+            "id": "l3",
+            "text": "why",
+            "to": "room",
+            "x": 76,
+            "y": 24,
+            "behavior": "flee"
+          }
+        ],
+        "objects": [
+          {
+            "id": "d1",
+            "kind": "door",
+            "text": "a door.",
+            "later": "",
+            "x": 28,
+            "y": 56,
+            "size": 1,
+            "to": "room"
+          },
+          {
+            "id": "d2",
+            "kind": "door",
+            "text": "a door.",
+            "later": "",
+            "x": 58,
+            "y": 56,
+            "size": 1,
+            "to": "watch"
+          },
+          {
+            "id": "d3",
+            "kind": "door",
+            "text": "this one is warm.",
+            "later": "",
+            "x": 88,
+            "y": 56,
+            "size": 1,
+            "to": "below"
+          },
+          {
+            "id": "w",
+            "kind": "wall-text",
+            "text": "visit [visits]",
+            "later": "",
+            "x": 18,
+            "y": 22,
+            "size": 1
+          },
+          {
+            "id": "s",
+            "kind": "stain",
+            "text": "",
+            "later": "",
+            "x": 70,
+            "y": 90,
+            "size": 1
+          }
+        ],
+        "light": "flicker",
+        "tint": ""
+      },
+      {
+        "id": "room",
+        "slug": "room",
+        "title": "",
+        "level": 2,
+        "body": "a completely normal room.\n\na chair. a window with nothing outside it.",
+        "later": "the chair is facing the door now.",
+        "labels": [
+          {
+            "id": "l1",
+            "text": "out",
+            "to": "corridor",
+            "x": 8,
+            "y": 8,
+            "behavior": "normal"
+          },
+          {
+            "id": "l2",
+            "text": "stay",
+            "to": "",
+            "x": 50,
+            "y": 86,
+            "behavior": "flicker"
+          },
+          {
+            "id": "l3",
+            "text": "BACK",
+            "to": "/basement",
+            "x": 88,
+            "y": 90,
+            "behavior": "wrong",
+            "really": "below"
+          }
+        ],
+        "objects": [
+          {
+            "id": "chair",
+            "kind": "chair",
+            "text": "a normal chair.",
+            "later": "a normal chair. it is warm.",
+            "x": 50,
+            "y": 62,
+            "size": 1,
+            "itemId": "chair-splinter"
+          },
+          {
+            "id": "win",
+            "kind": "window",
+            "text": "",
+            "later": "",
+            "x": 78,
+            "y": 34,
+            "size": 1
+          },
+          {
+            "id": "w",
+            "kind": "wall-text",
+            "text": "sit",
+            "later": "you didn't sit",
+            "x": 24,
+            "y": 32,
+            "size": 1
+          },
+          {
+            "id": "e",
+            "kind": "eye",
+            "text": "",
+            "later": "",
+            "x": 14,
+            "y": 72,
+            "size": 0.8
+          }
+        ],
+        "light": "dim",
+        "tint": ""
+      },
+      {
+        "id": "watch",
+        "slug": "watch",
+        "title": "",
+        "level": 2,
+        "body": "",
+        "later": "",
+        "labels": [
+          {
+            "id": "l1",
+            "text": "…",
+            "to": "corridor",
+            "x": 50,
+            "y": 18,
+            "behavior": "corrupt"
+          },
+          {
+            "id": "l2",
+            "text": "why",
+            "to": "room",
+            "x": 14,
+            "y": 76,
+            "behavior": "flee"
+          }
+        ],
+        "objects": [
+          {
+            "id": "e1",
+            "kind": "eye",
+            "text": "",
+            "later": "",
+            "x": 30,
+            "y": 40,
+            "size": 1.4
+          },
+          {
+            "id": "e2",
+            "kind": "eye",
+            "text": "",
+            "later": "",
+            "x": 70,
+            "y": 62,
+            "size": 1
+          },
+          {
+            "id": "w",
+            "kind": "wall-text",
+            "text": "they are only decoration",
+            "later": "they are only decoration\nthey are only decoration",
+            "x": 50,
+            "y": 86,
+            "size": 1
+          }
+        ],
+        "light": "none",
+        "tint": ""
+      },
+      {
+        "id": "below",
+        "slug": "below",
+        "title": "below",
+        "level": 3,
+        "body": "there is nothing under the basement.\n\nthere is nothing under the basement.\n\nyou found [found] things and moved [rocks] rocks to get here. it was watching all of it.",
+        "later": "you came back down. [visits].",
+        "labels": [
+          {
+            "id": "l1",
+            "text": "up",
+            "to": "/",
+            "x": 50,
+            "y": 10,
+            "behavior": "normal"
+          },
+          {
+            "id": "l2",
+            "text": "down",
+            "to": "below",
+            "x": 50,
+            "y": 93,
+            "behavior": "corrupt"
+          },
+          {
+            "id": "l3",
+            "text": "back",
+            "to": "corridor",
+            "x": 10,
+            "y": 14,
+            "behavior": "wrong",
+            "really": "below"
+          },
+          {
+            "id": "l4",
+            "text": "why",
+            "to": "watch",
+            "x": 82,
+            "y": 80,
+            "behavior": "corrupt"
+          }
+        ],
+        "objects": [
+          {
+            "id": "thing",
+            "kind": "object",
+            "text": "something.",
+            "later": "",
+            "x": 50,
+            "y": 64,
+            "size": 1,
+            "itemId": "something-below"
+          },
+          {
+            "id": "s",
+            "kind": "stain",
+            "text": "",
+            "later": "",
+            "x": 30,
+            "y": 82,
+            "size": 1
+          },
+          {
+            "id": "e1",
+            "kind": "eye",
+            "text": "",
+            "later": "",
+            "x": 86,
+            "y": 24,
+            "size": 1.6
+          },
+          {
+            "id": "e2",
+            "kind": "eye",
+            "text": "",
+            "later": "",
+            "x": 10,
+            "y": 52,
+            "size": 0.7
+          },
+          {
+            "id": "w",
+            "kind": "wall-text",
+            "text": "you were not supposed\nto come this far",
+            "later": "",
+            "x": 62,
+            "y": 30,
+            "size": 1
+          }
+        ],
+        "light": "none",
+        "tint": "#241a30"
+      }
+    ],
+    "eyes": {
+      "intervals": [
+        {
+          "min": 18,
+          "max": 50
+        },
+        {
+          "min": 9,
+          "max": 26
+        },
+        {
+          "min": 4,
+          "max": 12
+        }
+      ],
+      "maxVisible": 4,
+      "followChance": 0.35,
+      "flashChance": 0.3,
+      "lookChance": 0.35,
+      "hideRadius": 150
+    },
+    "noise": 0.5
+  },
+  "stickers": [
+    {
+      "id": "st-cat",
+      "content": "🐈‍⬛",
+      "image": "",
+      "x": 78,
+      "y": 18,
+      "rotate": -12,
+      "size": 2.4,
+      "target": "sticker-cat",
+      "says": "mrrp",
+      "draggable": true,
+      "hideOnMobile": false
+    },
+    {
+      "id": "st-star",
+      "content": "★",
+      "image": "",
+      "x": 12,
+      "y": 64,
+      "rotate": 20,
+      "size": 2.2,
+      "says": "a star. it's just a star.",
+      "draggable": true,
+      "hideOnMobile": false
+    },
+    {
+      "id": "st-mush",
+      "content": "🍄",
+      "image": "",
+      "x": 86,
+      "y": 70,
+      "rotate": 8,
+      "size": 2,
+      "says": "don't eat that",
+      "draggable": true,
+      "hideOnMobile": true
+    },
+    {
+      "id": "st-note",
+      "content": "post-it: buy milk, draw, remember",
+      "image": "",
+      "x": 2,
+      "y": 44,
+      "rotate": -6,
+      "size": 0.9,
+      "says": "",
+      "draggable": true,
+      "hideOnMobile": true
+    },
+    {
+      "id": "st-heart",
+      "content": "♥",
+      "image": "",
+      "x": 60,
+      "y": 84,
+      "rotate": 15,
+      "size": 1.8,
+      "says": "<3",
+      "draggable": true,
+      "hideOnMobile": false
+    },
+    {
+      "id": "st-warn",
+      "content": "⚠",
+      "image": "",
+      "x": 40,
+      "y": 8,
+      "rotate": 3,
+      "size": 1.4,
+      "says": "warning: website",
+      "draggable": true,
+      "hideOnMobile": true
+    },
+    {
+      "id": "st-eye",
+      "content": "◉",
+      "image": "",
+      "x": 92,
+      "y": 44,
+      "rotate": 0,
+      "size": 1.2,
+      "target": "sticker-eye",
+      "says": "...",
+      "draggable": false,
+      "hideOnMobile": false
+    }
+  ],
+  "strings": {
+    "nav.home": "home",
+    "nav.about": "about me",
+    "nav.art": "art",
+    "nav.games": "game room",
+    "nav.commissions": "commissions",
+    "home.intro": "this is my corner of the internet. it is a little messy. that's on purpose. (mostly.)",
+    "home.deadButton": "do not press",
+    "home.deadButtonReveal": "you pressed it. the button is fine. you are fine. probably.",
+    "home.cornerNote": "[writing under the corner: a tiny note only the curious get to read]",
+    "home.footer": "made by chei. there is more below this line. there is always more below the line.",
+    "home.footerSecret": "you scrolled past the end. there is a door: /door",
+    "about.title": "about chei",
+    "art.title": "art",
+    "games.title": "game room",
+    "games.intro": "small games. nothing serious. try not to lose too much.",
+    "commissions.transition": "loading normal website",
+    "eyes.note": "the eyes are only decoration",
+    "home.taglineHover": "(you hovered. that counts as looking.)",
+    "home.marquee": "★ welcome to my website ★ commissions are [open/closed] ★ the eyes are only decoration ★ do not press the button ★ [EDITABLE TICKER TEXT] ★ listen ★"
+  }
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450" role="img" aria-label="[COMMISSION EXAMPLE]">
+  <rect width="600" height="450" fill="#f0e6ff"/>
+  <ellipse cx="300" cy="220" rx="150" ry="110" fill="#c9b3ff" stroke="#2b2118" stroke-width="6"/><circle cx="250" cy="200" r="16" fill="#2b2118"/><circle cx="350" cy="200" r="16" fill="#2b2118"/><path d="M260 260 Q300 290 340 260" stroke="#2b2118" stroke-width="6" fill="none"/><path d="M180 120 L220 60 L240 130 Z" fill="#c9b3ff" stroke="#2b2118" stroke-width="6"/><path d="M420 120 L380 60 L360 130 Z" fill="#c9b3ff" stroke="#2b2118" stroke-width="6"/>
+  <text x="300" y="400" text-anchor="middle" font-family="monospace" font-size="22" fill="#2b2118">[COMMISSION EXAMPLE]</text>
+</svg>

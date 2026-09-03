@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450" role="img" aria-label="[ARTWORK 4 — finished]">
+  <rect width="600" height="450" fill="#e9ffd9"/>
+  <rect x="150" y="90" width="300" height="240" rx="24" fill="#b6ff3b" stroke="#2b2118" stroke-width="6"/><rect x="190" y="130" width="220" height="160" rx="12" fill="#fff" stroke="#2b2118" stroke-width="4"/><circle cx="300" cy="210" r="40" fill="#ff6fa8"/>
+  <text x="300" y="400" text-anchor="middle" font-family="monospace" font-size="22" fill="#2b2118">[ARTWORK 4 — finished]</text>
+</svg>
