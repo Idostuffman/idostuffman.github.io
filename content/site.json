@@ -704,6 +704,23 @@
       "enabled": true
     },
     {
+      "id": "chei-confront",
+      "note": "Typing 'chei' 20 times anywhere (not in a text field) turns the screen black and shows the confrontation.",
+      "trigger": {
+        "type": "keys",
+        "target": "chei",
+        "count": 20
+      },
+      "conditions": {},
+      "actions": [
+        {
+          "type": "confront"
+        }
+      ],
+      "once": false,
+      "enabled": true
+    },
+    {
       "id": "avatar-poke",
       "note": "Poking the avatar 7 times.",
       "trigger": {
@@ -1437,7 +1454,10 @@
         "you were not supposed to come this far"
       ],
       "whispers": [
-        "you were not supposed to come this far"
+        "you were not supposed to come this far",
+        "nobody comes down here on purpose",
+        "further than the last one got",
+        "it is starting to feel like you live here"
       ],
       "title": "…"
     }
@@ -1470,6 +1490,10 @@
     "perSecret": 0.5,
     "maxEyes": 48,
     "shyRadius": 140
+  },
+  "confrontation": {
+    "text": "WHAT DO YOU WANT?!?!?!",
+    "holdMs": 5000
   },
   "settings": {
     "persistProgress": false,
@@ -2670,7 +2694,15 @@
       "lookChance": 0.35,
       "hideRadius": 150
     },
-    "noise": 0.5
+    "noise": 0.5,
+    "deepWhispers": [
+      "you were not supposed to come this far",
+      "nobody comes down here on purpose",
+      "this room does not remember being found before",
+      "it keeps track of how many pieces you have",
+      "further than the last one got",
+      "you keep finding the parts. it keeps noticing."
+    ]
   },
   "stickers": [
     {

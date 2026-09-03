@@ -216,8 +216,9 @@ export const ActionSchema = z.discriminatedUnion("type", [
   z.object({ type: z.literal("glitch"), ms: z.number().int().min(50).max(5000).default(400) }),
   z.object({
     type: z.literal("sound"),
-    name: z.enum(["click", "blip", "glitch", "hum", "pop", "wrong", "win"]),
+    name: z.enum(["click", "blip", "glitch", "hum", "pop", "wrong", "win", "dread"]),
   }),
+  z.object({ type: z.literal("confront") }),
 ]);
 
 export const ConditionsSchema = z.object({
@@ -288,6 +289,11 @@ export const EyesSchema = z.object({
   perSecret: z.number().min(0).max(5).default(0.5),
   maxEyes: z.number().int().min(0).max(150).default(48),
   shyRadius: z.number().int().min(0).max(600).default(140),
+});
+
+export const ConfrontationSchema = z.object({
+  text: shortText.default("WHAT DO YOU WANT?!?!?!"),
+  holdMs: z.number().int().min(1000).max(30000).default(5000),
 });
 
 export const StickerSchema = z.object({
@@ -448,6 +454,14 @@ export const BasementSchema = z.object({
   rooms: z.array(BasementRoomSchema).default([]),
   eyes: BasementEyesSchema.prefault({}),
   noise: z.number().min(0).max(1).default(0.5),
+  deepWhispers: z.array(shortText).default([
+    "you were not supposed to come this far",
+    "nobody comes down here on purpose",
+    "this room does not remember being found before",
+    "it keeps track of how many pieces you have",
+    "further than the last one got",
+    "you keep finding the parts. it keeps noticing.",
+  ]),
 });
 
 export const SiteContentSchema = z.object({
@@ -485,6 +499,7 @@ export const SiteContentSchema = z.object({
   deepLevels: z.array(DepthLevelSchema).default([]),
   theme: ThemeSchema.prefault({}),
   eyes: EyesSchema.prefault({}),
+  confrontation: ConfrontationSchema.prefault({}),
   settings: SettingsSchema.prefault({}),
   progression: ProgressionSchema.prefault({}),
   basement: BasementSchema.prefault({}),

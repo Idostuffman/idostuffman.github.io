@@ -38,6 +38,7 @@ export type VisitorState = {
   extraEyes: number;
   messages: Message[];
   glitchUntil: number;
+  confrontUntil: number;
   spawnedObjects: { id: number; kind: "eye" | "sticker" | "window"; x: number; y: number }[];
 };
 
@@ -76,6 +77,8 @@ export type VisitorActions = {
   pushMessage: (text: string, style?: MessageStyle, ttl?: number) => void;
   dismissMessage: (id: number) => void;
   glitch: (ms: number) => void;
+  confront: (ms: number) => void;
+  dismissConfront: () => void;
   spawn: (kind: "eye" | "sticker" | "window", count: number) => void;
   removeSpawned: (id: number) => void;
   resetEverything: () => void;
@@ -160,6 +163,7 @@ const initialState: VisitorState = {
   extraEyes: 0,
   messages: [],
   glitchUntil: 0,
+  confrontUntil: 0,
   spawnedObjects: [],
 };
 
@@ -315,6 +319,8 @@ export const useVisitor = create<VisitorState & VisitorActions>()(
         })),
       dismissMessage: (id) => set((s) => ({ messages: s.messages.filter((m) => m.id !== id) })),
       glitch: (ms) => set({ glitchUntil: Date.now() + ms }),
+      confront: (ms) => set({ confrontUntil: Date.now() + ms }),
+      dismissConfront: () => set({ confrontUntil: 0 }),
       spawn: (kind, count) =>
         set((s) => ({
           spawnedObjects: [
@@ -361,7 +367,7 @@ export const useVisitor = create<VisitorState & VisitorActions>()(
       })),
       skipHydration: true,
       partialize: (s) => {
-        const { messages: _m, glitchUntil: _g, spawnedObjects: _s, hydrated: _h, extraEyes: _e, ...rest } = s;
+        const { messages: _m, glitchUntil: _g, confrontUntil: _c, spawnedObjects: _s, hydrated: _h, extraEyes: _e, ...rest } = s;
         return rest as VisitorState & VisitorActions;
       },
       onRehydrateStorage: () => (state) => {

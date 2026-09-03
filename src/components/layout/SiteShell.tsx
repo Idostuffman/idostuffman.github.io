@@ -11,6 +11,7 @@ import { SpawnedObjects } from "./SpawnedObjects";
 import { PageCorner } from "./PageCorner";
 import { WhisperLayer } from "./WhisperLayer";
 import { PocketButton } from "@/components/inventory/Pocket";
+import { Confrontation } from "@/components/chaos/Confrontation";
 
 const NORMAL_PREFIXES = ["/commissions", "/admin"];
 const BARE_PREFIXES = ["/basement", "/void", "/door"];
@@ -28,6 +29,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         {children}
       </main>
       {!normal && <Messages />}
+      {!normal && <Confrontation />}
       {!normal && !bare && <Eyes />}
       {!normal && !bare && <SpawnedObjects />}
       {!normal && !bare && <PageCorner />}

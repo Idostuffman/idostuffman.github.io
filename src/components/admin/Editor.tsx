@@ -49,7 +49,7 @@ const TABS: { id: Tab; label: string }[] = [
 ];
 
 const TRIGGER_TYPES = ["click", "dblclick", "hover", "longpress", "keys", "visit", "visits", "depth", "gameloss", "scroll", "idle"] as const;
-const ACTION_TYPES = ["depth", "setDepth", "unlockSecret", "navigate", "message", "reveal", "hide", "setText", "setImage", "flag", "spawn", "glitch", "sound"] as const;
+const ACTION_TYPES = ["depth", "setDepth", "unlockSecret", "navigate", "message", "reveal", "hide", "setText", "setImage", "flag", "spawn", "glitch", "sound", "confront"] as const;
 const FONTS = ["sans", "serif", "hand", "mono", "pixel", "display"] as const;
 
 function defaultAction(type: InteractionAction["type"]): InteractionAction {
@@ -79,6 +79,8 @@ function defaultAction(type: InteractionAction["type"]): InteractionAction {
       return { type, ms: 400 };
     case "sound":
       return { type, name: "pop" };
+    case "confront":
+      return { type };
   }
 }
 
@@ -123,7 +125,8 @@ function ActionEditor({ action, onChange }: { action: InteractionAction; onChang
         </>
       )}
       {a.type === "glitch" && <Num label="ms" value={a.ms} min={50} max={5000} onChange={(v) => onChange({ ...a, ms: v })} />}
-      {a.type === "sound" && <Select label="sound" value={a.name} options={["click", "blip", "glitch", "hum", "pop", "wrong", "win"] as const} onChange={(v) => onChange({ ...a, name: v })} />}
+      {a.type === "sound" && <Select label="sound" value={a.name} options={["click", "blip", "glitch", "hum", "pop", "wrong", "win", "dread"] as const} onChange={(v) => onChange({ ...a, name: v })} />}
+      {a.type === "confront" && <p className="admin__help">full-screen blackout, two eyes, the confrontation text below, and the "dread" sound. Uses the settings under "confrontation" at the top of this tab.</p>}
     </div>
   );
 }
@@ -589,6 +592,14 @@ export function Editor({ initial, who }: { initial: SiteContent; who?: string })
             trigger → conditions → actions. Targets that exist in the site: site-logo, home-avatar, dead-button, page-corner, any sticker target, and bg-&lt;word&gt; for
             background words. Element ids for reveal/setText: dead-button-reveal, corner-note, footer-secret, face-note.
           </div>
+          <h3 style={{ fontSize: "0.9rem" }}>confrontation (the "confront" action)</h3>
+          <div className="admin__grid">
+            <Text label="big text" value={content.confrontation.text} onChange={(v) => patch((c) => (c.confrontation.text = v))} />
+            <Num label="stays up for (ms)" value={content.confrontation.holdMs} min={1000} max={30000} step={500} onChange={(v) => patch((c) => (c.confrontation.holdMs = v))} />
+          </div>
+          <p className="admin__help">
+            The default interaction for this is below — trigger "keys", target "chei", count 20. Change the target/count there to change the word or how many times it needs typing.
+          </p>
           <ListEditor
             items={content.interactions}
             onChange={(v) => patch((c) => (c.interactions = v))}

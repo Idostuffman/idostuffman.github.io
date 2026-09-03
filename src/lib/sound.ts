@@ -1,6 +1,6 @@
 "use client";
 
-export type SoundName = "click" | "blip" | "glitch" | "hum" | "pop" | "wrong" | "win";
+export type SoundName = "click" | "blip" | "glitch" | "hum" | "pop" | "wrong" | "win" | "dread";
 
 let ctx: AudioContext | null = null;
 let enabled = false;
@@ -93,6 +93,13 @@ export function playSound(name: SoundName) {
     case "hum":
       tone(ac, { freq: 55, type: "sine", dur: 1.6, gain: 0.05 });
       tone(ac, { freq: 57, type: "sine", dur: 1.6, gain: 0.03 });
+      break;
+    case "dread":
+      noise(ac, 1.4, 0.05);
+      noise(ac, 1.1, 0.04);
+      tone(ac, { freq: 90, to: 38, type: "sawtooth", dur: 1.3, gain: 0.07 });
+      tone(ac, { freq: 92, to: 36, type: "sine", dur: 1.3, gain: 0.05 });
+      tone(ac, { freq: 220, to: 60, type: "sine", dur: 0.9, gain: 0.03, when: 0.15 });
       break;
   }
 }

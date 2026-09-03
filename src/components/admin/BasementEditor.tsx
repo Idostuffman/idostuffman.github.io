@@ -1,7 +1,7 @@
 "use client";
 
 import type { SiteContent } from "@/content/schema";
-import { Area, ListEditor, Num, Select, Text, newId } from "./fields";
+import { Area, Lines, ListEditor, Num, Select, Text, newId } from "./fields";
 
 type Props = { content: SiteContent; patch: (mutate: (c: SiteContent) => void) => void };
 
@@ -18,6 +18,10 @@ export function BasementEditor({ content, patch }: Props) {
         site path; “wrong” labels go to “really” instead. Level 2 rooms need the hall; level 3 needs a level-2 room first. Text supports the same
         placeholders as items. Positions are percentages.
       </div>
+      <div className="admin__help">
+        One of these shows, picked by room and visit count so it varies as you explore, as the rotated whisper in every level-3 room.
+      </div>
+      <Lines label="level-3 whispers" value={b.deepWhispers} onChange={(v) => patch((c) => (c.basement.deepWhispers = v))} />
       <div className="admin__grid">
         <Text label="tab title while inside" value={b.title} onChange={(v) => patch((c) => (c.basement.title = v))} />
         <Num label="film grain (0–1)" value={b.noise} min={0} max={1} step={0.05} onChange={(v) => patch((c) => (c.basement.noise = v))} />

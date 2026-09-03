@@ -83,6 +83,10 @@ export function runAction(action: InteractionAction, ctx: ActionContext) {
     case "sound":
       playSound(action.name);
       break;
+    case "confront":
+      s.confront(ctx.content.confrontation.holdMs);
+      playSound("dread");
+      break;
   }
 }
 

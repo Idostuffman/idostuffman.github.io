@@ -9,7 +9,7 @@ import { useVisitor } from "@/state/visitorStore";
 import { collectItemById, renderText } from "@/lib/progression";
 import { RichText } from "@/lib/richtext";
 import { RealEye } from "@/components/chaos/RealEye";
-import { corrupt } from "@/lib/utils";
+import { corrupt, pick } from "@/lib/utils";
 import { playSound } from "@/lib/sound";
 
 function Label({ label, level }: { label: BasementLabel; level: number }) {
@@ -162,6 +162,8 @@ function Room_({ room }: { room: Room }) {
 
   const body = renderText(revisit && room.later ? room.later : room.body, state, content.identity.name);
   const title = room.level >= 3 ? corrupt(room.title, 0.4, 7) : room.title;
+  const deepWhispers = content.basement.deepWhispers;
+  const whisper = deepWhispers.length ? pick(deepWhispers, `${room.slug}-${state.run.roomsVisited.length}`) : "you were not supposed to come this far";
 
   return (
     <section className={`bm bm--${room.light} bm--level-${room.level}`} style={room.tint ? ({ "--tint": room.tint } as React.CSSProperties) : undefined} aria-label={room.title || "room"}>
@@ -177,7 +179,7 @@ function Room_({ room }: { room: Room }) {
       ))}
       {room.level >= 3 && (
         <p className="bm__whisper" aria-hidden="true">
-          {corrupt("you were not supposed to come this far", 0.25, state.run.roomsVisited.length)}
+          {corrupt(whisper, 0.25, state.run.roomsVisited.length)}
         </p>
       )}
     </section>
